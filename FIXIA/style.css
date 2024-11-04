@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #6d00f3;
+    color: #333;
+    padding: 20px; /* Adiciona espaço nas laterais para telas menores */
+}
+
+.login-container {
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease; /* Suaviza as transições */
+}
+
+.login-image {
+    flex: 1;
+    background-color: #e2e0f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.login-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.login-form {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-form h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.login-form p {
+    color: #555;
+    margin-bottom: 1.5em;
+}
+
+.input-group {
+    margin-bottom: 1em;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 0.3em;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f0f0f5;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #e2e0f3;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #4d0dc3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 1em;
+}
+
+button:hover {
+    background-color: #532091;
+}
+
+.signup {
+    text-align: center;
+    margin-top: 1em;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.signup a {
+    color: #6e26c5;
+    text-decoration: none;
+}
+
+.signup a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos responsivos para dispositivos menores */
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .login-image {
+        padding: 10px;
+        height: 180px; /* Define altura ajustada para economizar espaço */
+    }
+
+    .login-form {
+        padding: 20px;
+    }
+
+    .login-form h1 {
+        font-size: 1.8em;
+    }
+
+    .login-form p {
+        font-size: 0.95em;
+    }
+
+    .input-group input {
+        padding: 10px;
+        font-size: 0.95em;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 1em;
+    }
+}
+
+/* Estilos para dispositivos extra pequenos (como smartphones menores) */
+@media (max-width: 480px) {
+    .login-container {
+        padding: 10px;
+        box-shadow: none; /* Remove sombra para simplificar o layout em telas pequenas */
+    }
+
+    .login-image {
+        height: 150px; /* Ajusta a altura para telas muito pequenas */
+    }
+
+    .login-form {
+        padding: 15px;
+    }
+
+    .login-form h1 {
+        font-size: 1.5em;
+    }
+
+    .login-form p {
+        font-size: 0.9em;
+    }
+
+    .input-group input {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+}
